@@ -1,4 +1,3 @@
-import Button from '@mui/material/Button';
 import * as React from 'react';
 import { ImSpinner2 } from 'react-icons/im';
 
@@ -35,7 +34,7 @@ const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const disabled = isLoading || buttonDisabled;
 
     return (
-      <Button
+      <button
         ref={ref}
         onClick={onClick}
         disabled={disabled}
@@ -101,7 +100,7 @@ const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonProps>(
           </div>
         )}
         {children}
-      </Button>
+      </button>
     );
   }
 );

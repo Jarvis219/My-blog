@@ -1,10 +1,10 @@
-import SearchIcon from '@mui/icons-material/Search';
 import clsx from 'clsx';
 import { useContext } from 'react';
 
-import ButtonBase from '@/components/buttons/Button';
+import ButtonBase from '@/components/buttons';
 
 import { ThemeContext } from '@/context/ThemeContext';
+import { SearchIcon } from '@/svg/icons';
 
 const Search = () => {
   const { mode } = useContext(ThemeContext);
@@ -16,7 +16,7 @@ const Search = () => {
         'shadow-none hover:bg-transparent focus:bg-transparent focus:shadow-none'
       )}
     >
-      <SearchIcon fontSize='large' className='cursor-pointer' />
+      <SearchIcon />
     </ButtonBase>
   );
 };

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useContext } from 'react';
 
-import ButtonSwitch from '@/components/buttons/ButtonSwitch';
+import { ButtonSwitch } from '@/components/buttons';
 import ContactMenu from '@/components/contact/ContactMenu';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        mode === 'dark' ? 'bg-dark' : 'bg-gray-50',
+        mode === 'dark' ? 'bg-dark' : 'bg-white',
         'sticky top-0 z-50 py-4 shadow-2xl'
       )}
     >

@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { useContext } from 'react';
 
+import Banner from '@/components/banner';
 import Seo from '@/components/Seo';
 
 import { ThemeContext } from '@/context/ThemeContext';
@@ -26,10 +27,11 @@ export default function HomePage() {
       <Seo />
       <section
         className={clsx(
-          mode === 'dark' ? 'bg-dark' : 'bg-gray-50',
+          mode === 'dark' ? 'bg-dark' : 'bg-white',
           'h-screen max-h-fit'
         )}
       >
+        <Banner />
         {/* <div className='layout flex min-h-screen flex-col items-center justify-center text-center'> */}
         {/* <Vercel className='text-5xl' /> */}
 

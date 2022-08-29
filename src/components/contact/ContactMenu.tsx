@@ -1,7 +1,3 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import clsx from 'clsx';
 import React, { useContext } from 'react';
 
@@ -9,10 +5,11 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 
 import { ThemeContext } from '@/context/ThemeContext';
 const links = [
-  { href: '/', icon: <FacebookIcon /> },
-  { href: '/social', icon: <InstagramIcon /> },
-  { href: '/about', icon: <TelegramIcon /> },
-  { href: '/contact', icon: <TwitterIcon /> },
+  { href: '/', icon: '' },
+  // { href: '/', icon: <FacebookIcon /> },
+  // { href: '/social', icon: <InstagramIcon /> },
+  // { href: '/about', icon: <TelegramIcon /> },
+  // { href: '/contact', icon: <TwitterIcon /> },
 ];
 
 const ContactMenu = () => {
@@ -28,7 +25,7 @@ const ContactMenu = () => {
               'hover:text-primary-300'
             )}
           >
-            {icon}
+            {/* {icon} */}
           </UnstyledLink>
         </li>
       ))}

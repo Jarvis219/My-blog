@@ -1,7 +1,7 @@
 import { clsx } from 'clsx';
 
 import { ETheme } from '@/context/ThemeContext';
-import { MoonIcon, SunIcon } from '@/svg/Icon';
+import { MoonIcon, SunIcon } from '@/svg/icons';
 
 export default function CustomizedSwitches({
   mode,
